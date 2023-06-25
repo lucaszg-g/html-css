@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav-icon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e duminua o tamanho do seu navegador.</p>
+
+    <picture><!--Essa tag permite que você crie varias imagens dentro dela-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Áudio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5.</p>
+
+    <audio preload="metadata" controls> <!--A tag preload serve para carregar o arquivo de audio automaticamente, os parametros "auto", "metadata" e "none", servem para carregar antecipadaemnte esse arquivo. O Auto carregara 100% do arquivo; o metadata so carregara algumas informações, como tempo do audio, tamanho e etc; E o nome não carregara nada.-->
+    
+    <!--O parametro controls serve para mostrar o controle de audio no seu website-->
+        <source src="midia/lotus-pond-aakash-gandhi.mp3" type="audio/mpeg">
+        <source src="midia/lotus-pond-aakash-gandhi.ogg" type="audio/ogg">
+        <source src="midia/lotus-pond-aakash-gandhi.wav" type="audio/wav">
+        
+        <!--Evites arquivos wav, eles são muitos pesados-->
+
+        <!--Lembrando que a ordem aqui importa, ele sempre tentara carregar os audios de cima para baixo-->
+        <p>Infelizmente o seu navegador não tem suporte para audio.</audio></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <h1>Videos hosdpedados em um servidor local</h1>
+    <p>Aqui vai um video top</p>
+    <!--EVITE SEMPRE HOSPEDAR VIDEOS EM UM SERVIDOR LOCAL, ISSO VAI SAIR CARO NO FINAL.-->
+    <video controls width="500"> <!-- Podemos usar a tag "poster="local do poster"" dentro do paramentro video para fazer a thumb de um video"-->
+        
+        <source src="midia/meu-video-720.mp4" type="video/mp4">
+        <!--Aqui eu colocaria mais sources com outros tipos de videos, como exemplo m4v, webm, orv e etc, para se caso o primeiro tipo de video não foi compativel com o navegador ele tente outro.
+
+            So não coloquei esse outros tipos de videos porque esta dando algum erro na hora de converter.
+        
+        A mesma coisa dos audios-->
+    </video>
+    <h1>Inserindo videos do Youtube</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

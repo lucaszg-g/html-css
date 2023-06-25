@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: rgb(5, 4, 10);
+            color: white;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(173, 173, 173);
+
+            /*Shorthand de bordas
+                border: border-width border-style border-color
+            */
+
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+
+            /*Shorthand de bordas
+                padding: padding-top padding-right padding-bottom padding-left
+            */
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;*/
+
+            margin: auto; /*a margem auto centraliza a caixa.*/
+            /*Para centralizar a margem mas ainda mexer no top e bottom basta usar o comando
+            margin: margin-top auto margin-bottom auto*/ 
+
+            /*Margem borda para fora
+              Padding borda para dentro*/
+
+              outline-width: 5px;
+              outline-style: dashed;
+              outline-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-levek</h1>
+    <p>Parágrafos também são exemploes de box-level, mas os <a href="">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
